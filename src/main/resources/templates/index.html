@@ -8,15 +8,20 @@
     <button onclick="saveReq()">글작성</button>
     <a href="/board/save">글작성(링크)</a>
     <button onclick="listReq()">글목록</button>
+    <button onclick="pageReq()">페이징</button>
 </body>
-<script>
-
+<script th:inline="javascript">
     const saveReq = () => {
+
         location.href = "/board/save";
     }
 
     const listReq = () => {
         location.href = "/board/";
+    }
+
+    const pageReq = () => {
+        location.href = "/board/paging";
     }
 </script>
 </html>
